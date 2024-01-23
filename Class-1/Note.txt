@@ -1,0 +1,15 @@
+What is JavaScript?
+
+JavaScript is a programming language. We use it to give instructions to the computer.
+
+JavaScript is a Dynamically Typed language.
+
+
+
+Example: Input (Code) ==> computer ==> Output
+
+
+Setting up VS Code </>
+it is free and popular editor by Microsoft.
+
+VS Code Download
