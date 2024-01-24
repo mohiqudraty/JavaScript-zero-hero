@@ -1,0 +1,122 @@
+-Loops in JavaScript
+===================
+Loops are used to execute a piece of again & again.
+
+-for Loop
+---------
+for(let i = 1; i <=5; i++){
+    console.log(i)
+}
+
+
+
+
+-while Loop
+-----------
+let i = 1;
+while (i <= 5) {
+    console.log(i);
+    i++ // don't forget to use this
+}
+
+
+
+-do-while Loop
+--------------
+let i = 20;
+do {
+    console.log("Mohiuddin");
+    i++
+} while (condition);
+
+
+
+
+2 special loops
+===============
+
+-for-of Loop
+------------   //Not use for Object
+
+let str = "Mohiuddin";
+let size = 0;
+for (const val of str) {
+  //iterator -> characters
+  console.log(val, str);
+  size++;
+}
+console.log("Name Character Length is - ", size);
+
+
+
+
+
+-for-in Loop
+------------
+
+
+
+
+Warning: Not use this 
+-Infinite Loop: A Loop that never ends
+--------------------------------------
+if stopping conditions will not false that loop never stop .
+for(let i = 1; i > 5; i++){
+    console.log(i)
+}
+
+
+
+
+-String in JavaScript
+=====================
+String is a sequence of characters used to represent text.
+
+Create String:
+--------------
+let str = "Mohiuddin"
+
+
+String Length:
+-------------
+str.length 
+
+
+String Indices:
+--------------
+str.[0], str[1], str[2]
+
+
+-String Methods in JavaScript
+============================= String is Immutable
+
+These are built-in function to manipulate a string.
+
+* str.toUpperCase()
+* str.toLowerCase()
+* str.trim() // remove white spaces
+* str.slice(start, end?) // return part of string
+* str.concat()
+* str.replace("Q", "K")
+* str.replaceAll("u", "o")
+* str.charAt(10)
+
+
+
+Methods Not change the Original String.
+Methods return a new Value.
+
+
+
+
+-Template Literals in JavaScript
+================================
+A way to have embedded expressions in strings.
+
+`This is Template Literals` (``)
+
+-String Interpolation
+---------------------
+To Create strings by doing substitution of placeholders.
+
+`String text ${expression} string text`
