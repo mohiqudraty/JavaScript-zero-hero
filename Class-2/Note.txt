@@ -1,0 +1,124 @@
+Comment in JavaScript
+=====================
+Comment is a Part of code which is not executed.
+
+// This is  Single line Comment
+/* This is multi-line Comment. */
+
+
+
+Operators in JavaScript
+=======================
+Used to perform some operation on data.
+
+expression: a+b;
+a/b is a operands and + is a operator.
+
+
+
+Arithmetic Operators
+--------------------
++ - * /
+Modulus (%)  (Modulus give us the reminders value of divider)
+Exponentiation (**)
+Increment (++) // Unary Operators
+Decrement (--) // Unary Operators
+
+
+// Unary Operators
+Post Increment/Decrement execute from next line 
+Increment
+a ++ (Post Increment)
+++ a (Pre Increment)
+
+Decrement
+a -- (Post Decrement)
+-- a (Pre Decrement)
+
+
+
+
+Assignment Operators
+--------------------
+= += -= *= /= %= **=
+
+every value will store from right side to left side like: a = 20; 20 will store in a;
+
+a += 5 // a = a + 5
+a -= 5 // a = a - 5
+a *= 5 // a = a * 5
+a /= 5 // a = a / 5
+a %= 5 // a = a % 5
+a **= 5 // a = a ** 5
+
+
+
+
+Comparison Operators
+--------------------
+ Equal to ==
+ Equal to & type ===
+
+ not Equal to !=
+ not Equal to & type !==
+
+ > >= < <=
+
+
+
+
+ Logical Operators
+--------------------
+Logical AND &&
+
+Logical OR ||
+
+Logical NOT !
+
+
+
+
+
+Conditional Statements
+======================
+To implement some condition in the code.
+
+if Statement
+------------
+if-else Statement
+-----------------
+else-if Statement
+-----------------
+
+
+
+Ternary Operators
+=================
+simpler, compact, if-else Statement
+
+condition ? true (output) : false (output)
+
+age > 18 ? "vote" : "not vote";
+
+
+
+
+Switch Statements
+=================
+
+
+
+
+
+
+Syntax = rules
+--------------
+
+alert(), Prompt()
+
+
+
+MDN Docs (main)
+W3School
+Tutorial Re-Public
+
