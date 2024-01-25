@@ -1,0 +1,100 @@
+-Arrays in JavaScript
+===================== (Mutable)
+spacial object (index: value)
+Collection of items-
+Usually we use arrays when we want to collect items of the same type.
+
+-Create Array
+-------------
+
+let students = ["mahmud", "mohi", "shuvo", "nizam"]
+
+let marks = ["55", "44", "40", "33"]
+
+let info = ["mahmud", 55, "HSC",] ❌ Not recommended
+
+
+-Array Indices
+--------------
+arr[0]
+arr[1]
+arr[2]
+
+
+
+-Looping over an Array
+======================
+Print all elements of an array.
+
+Loops -> Iterable (strings, objects, arrays)
+
+
+let marks = [12, 34, 5, 77, 88, 44, 54, 76];
+
+for loop
+--------
+for (let i = 0; i < marks.length; i++) {
+   console.log(marks[i]); // print the all value of index
+ }
+
+
+
+let divisions = [
+  "Barisal",
+  "Chittagong",
+  "Dhaka",
+  "Khulna",
+  "Mymensingh",
+  "Rajshahi",
+  "Rangpur",
+  "Sylhet",
+];
+
+for of
+-----
+for (let name of divisions) {
+  console.log(name.toUpperCase()); // print the all divisions name on toUpperCase
+}
+
+Note: When we need to work with array of index we should not use for-of because we cannot access the index if we use for-of but we can use index indirectly
+
+
+
+
+
+-Arrays Methods
+---------------
+
+Push()  : add to End;
+Pop()   : delete from end and return;
+toString: converts array to string;
+
+
+Concate() : joins multiple arrays & returns result;
+unshift() : add to start;
+shift()   : delete from start and return;
+
+
+slice()   : return a piece of the array ;
+            slice(startIdx, endIdx)
+
+splice()  : change original array (add, remove, replace)
+            splice(startIdx, delCount, newElement...)
+
+Note: 
+if we don't give start index then splice() return an empty array or not change on main array.
+
+if we use just start index or not mention to delete/remove index then delete/remove all of elements which are after start index.
+
+
+
+
+
+
+
+
+
+--Property   VS  Method--
+-------------------------
+Property give any value.
+method do any work
