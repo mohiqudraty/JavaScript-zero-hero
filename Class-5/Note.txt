@@ -1,0 +1,45 @@
+-Functions in JavaScript
+=======================
+Block of code that performs a specific task, can be invoked whenever needed.
+
+Function help us for ignore code repetitions
+redundancy -> Repeat
+
+Function Definition
+------------------- We can define with Parameters
+function functionName(params) {
+    // do some work
+}
+
+steps: function[keyword] name[functionName] ([Function Parameters]) { [function block / Working area]}
+
+Function Call
+-------------
+functionName() // we can call with arguments
+
+
+-Arrow Function in JavaScript
+============================= Modern JavaScript
+Compact way of writing a function.
+
+define arrow function
+---------------------
+const myArrowFunc = (x, y){
+    // do some work
+}
+
+Function Define: [Declare and Assign a variable] ()[parameters] => [arrow] {} [block]
+
+
+
+
+
+Note:
+function parameters --> like local variables -> Block Scope{} of functions.
+We cannot do anything in a function after return the value;
+
+
+
+NaN === Not a Number;
+
+
