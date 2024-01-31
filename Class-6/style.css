@@ -1,0 +1,25 @@
+body {
+  background-color: rgba(64, 112, 114, 0.637);
+}
+
+h1 {
+  background-color: black;
+  color: aliceblue;
+}
+
+button {
+  background-color: cornflowerblue;
+  color: aliceblue;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.box {
+  width: 10vw;
+  height: 8vh;
+  background-color: cornflowerblue;
+  padding: 5%;
+  margin: 10px auto;
+  text-align: center;
+}

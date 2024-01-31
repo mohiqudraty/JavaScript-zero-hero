@@ -1,0 +1,98 @@
+-The Musketeers of Web Dev
+==========================
+-HTML (Structure)
+-CSS (style)
+-JS (logic)
+
+
+Starter Code:
+------------
+<style> tag connects HTML with CSS.
+<script> tag connects HTM with JavaScript.
+
+
+Why We Should Make Separate file for JS ?
+Here is Three Benefits of Separate File Coding.
+Readability
+Modularity
+Browser Caching
+
+
+-Window Object
+==============
+The Window Object represents an open window in a Browser. It is browser's Object (not JavaScript's) & is a automatically created by browser.
+
+It is a global Object with lots of properties & methods.
+
+
+-What is DOM?
+------------
+When a wb page is loaded, the browser creates a Document Object Model(DOM) of the page.
+
+Tree Like Structure=>
+Window > Document> HTML> head+body
+head > meta + link + title + style 
+body > header + main + footer
+
+
+Dynamic Changes / Dynamic Manipulation === DOM
+
+
+
+-DOM Manipulation
+=================
+
+Selecting With ID
+-----------------
+document.getElementById("id")
+
+
+Selecting With Class
+-----------------
+document.getElementsByClassName("className") --- return HTML Collection Like an array(but not an array)
+
+
+Selecting With Tag
+-----------------
+document.getElementByTagName("tag(h1, p, div etc)")
+
+
+
+-Properties
+===========
+We can get/set/change/update the html elements/contents with throw of properties.---
+
+* Tag Name: returns tag for element nodes.
+
+*innerText: returns the text content of the element and all its children.
+
+*innerHTML: returns the plain text or HTML contents in the element.
+
+* textContent: returns textual content even for hidden elements.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Need To Learn:
+-------------
+console.log() VS console.dir()
+
+Parent Vs Child VS Sibling
+
+Navigation
+
+
+DOM Tree: Node
+=========
+Text Node 
+Comment
+Elements 
