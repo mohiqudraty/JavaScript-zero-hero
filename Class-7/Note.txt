@@ -1,0 +1,47 @@
+-DOM Manipulation
+=================
+Attributes
+----------
+* getAttribute(Attributes) // to get the Attribute value
+
+* setAttribute(Attribute, value) // to set the Attribute value th
+
+
+-Style
+------
+
+* node.style
+
+
+-Insert Elements
+---------------
+1. Create 
+2. Add 
+
+
+
+let element = document.createElement("div");
+
+
+* node.append(el) // adds at the end of node (inside)
+
+* node.prepend(el) // adds at the start of node (inside)
+
+* node.before(el) // adds before the node (outside)
+
+* node.after(el) // adds  after the node (outside)
+
+
+
+-Delete Element
+
+* node.remove() // removes the node 
+
+
+
+Need To Learn: 
+
+* appendChild()
+* removeChild()
+
+* classList

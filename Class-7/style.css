@@ -1,0 +1,19 @@
+#box {
+  height: 30vh;
+  background-color: cornflowerblue;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.para {
+  height: 100px;
+  background-color: rgb(0, 116, 248);
+  color: #fff;
+  padding: 10px;
+}
+
+.newClass {
+  background-color: black;
+  padding: 5px;
+  font-size: x-large;
+}
