@@ -1,0 +1,66 @@
+-Events in JavaScript
+=====================
+The change in the state of an object is known as an Event
+Events are fired to notify code of "interesting changes" that may affect code execution.
+
+Events:
+
+* Mouse Events (click, double click etc.)
+* Keyboard Events (keyPress, keyUp, keyDown)
+* Form Events (submit etc.)
+* Print Events & Many More...
+
+
+
+-Event Handling in JS 
+=====================
+---------------------
+
+Example:
+node.event = ()=> {
+     // handle here
+}
+
+Inline Event Handling⚠ (Low Priority Then JS Handling)
+if we execute same handler in any html element from inline or js file will work the js file handler , JS Handler is High Priority.
+
+and if we use same event handler in js file will work the last one!
+
+
+-Event Object in JS 
+===================
+It is a special object that has details about the event.
+
+All event handlers gave access to the Event Object's properties and methods.
+
+
+Example:
+node.event = (e)=> {
+     // handle here
+}
+
+Access:
+e.target, e.type, e.clientX, e.clientY
+
+
+
+
+-Event Listener in JS 
+=====================
+
+node.addEventListener(event, callback)
+
+node.removeEventListener(event, callback)
+
+
+*Note: the callback reference should be same to remove.
+
+
+
+
+
+Learn More About Events: (Important)🔴
+
+* click
+* Mouse 
+* Key
