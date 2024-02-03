@@ -1,0 +1,37 @@
+Tic Tac Toe
+===========
+Game Have 9 Boxes
+ 0 1 2
+ 3 4 5
+ 6 7 8
+
+ Player-1
+ Player-2
+
+ Wining Pattern
+ --------------
+
+ Horizontally
+ 0 1 2
+ 3 4 5
+ 6 7 8
+
+ Vertically
+ 0 3 6
+ 1 4 7
+ 2 5 8
+ Top Left To Down Right Crossing
+ 0 4 8
+ Top right To Down Left Crossing
+ 2 4 6
+
+ Total 8 Patterns
+ ----------------
+ 0 1 2
+ 3 4 5
+ 6 7 8
+ 0 3 6
+ 1 4 7
+ 2 5 8
+ 0 4 8
+ 2 4 6
