@@ -23,14 +23,12 @@ resetBtn.addEventListener("click", () => {
 
 const showWinner = (userWin, userChoice, computerChoice) => {
   if (userWin) {
-    console.log(`You Win🎉 ${userChoice} Beats ${computerChoice}`);
     msg.innerText = `You Win🎉 Your ${userChoice} Beats ${computerChoice}`;
     msg.style.backgroundColor = "green";
     userScore++;
     userPoint.innerText = userScore;
   } else {
-    console.log(`You Lost💣 ${computerChoice} Beats Your ${userChoice}`);
-    msg.innerText = "You Lose💣";
+    msg.innerText = `You Lost💣 ${computerChoice} Beats Your ${userChoice}`;
     msg.style.backgroundColor = "red";
     computerScore++;
     compPoint.innerText = computerScore;
@@ -38,7 +36,6 @@ const showWinner = (userWin, userChoice, computerChoice) => {
 };
 
 const drawGame = () => {
-  console.log("Draw Game");
   msg.innerText = "Draw Game👓 Play Again!";
   msg.style.backgroundColor = "rgb(7, 2, 24)";
   drawScore++;
@@ -54,8 +51,6 @@ const genCompChoice = () => {
 const playGame = (userChoice) => {
   //Generate computer choice -> modular
   const computerChoice = genCompChoice();
-  console.log("userChoice", userChoice);
-  console.log("com choice", computerChoice);
 
   if (userChoice === computerChoice) {
     // Draw Game
