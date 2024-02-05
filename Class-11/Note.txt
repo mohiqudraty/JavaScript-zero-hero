@@ -41,7 +41,68 @@ constructor() method is:
 
 
 
+-Inheritance in JS
+------------------
+inheritance is passing down properties & methods from parent class to child class.
 
-Note:
+class Parent {
 
+}
+
+class Child extends Parent {
+
+}
+
+// child => we called in programming (derived)
+
+* if Child & Parent have same method, child's method will be used.[Method Overriding]
+
+
+
+
+
+-super keywords in JS
+---------------------
+The super keywords is used to call the constructor of its parent class to access the parent's properties and methods.
+
+
+super(args) // calls Parent's constructor
+
+super.parentMethod(args)
+
+
+Uncaught ReferenceError: Must call super constructor in derived class before accessing 'this' or returning from derived constructor
+    at new Engineer
+
+
+
+
+
+-Error Handling
+---------------
+try-catch
+
+try{
+
+    ...normal code
+
+}catch (err){
+
+    ...handling error 
+
+}
+
+
+
+
+
+
+
+Note: (important)📕
+ProtoTypes
+Classes
+constructor
+Inheritance
 this keywords
+super keywords ===> if extends use super (important when Inheritance)
+Error Handling

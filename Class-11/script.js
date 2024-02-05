@@ -36,7 +36,7 @@ const qudraty = {
 };
 
 qudraty.__proto__ = employee; // we set the prototype
-
+// ---------------------------------------------
 // -Classes in JS
 // --------------
 // Class is a program-code template for creating objects.
@@ -67,7 +67,7 @@ qudraty.__proto__ = employee; // we set the prototype
 // fortune.setBrand("Fortune");
 // let lexus = new ToyotaCar();
 // lexus.setBrand("Lexus");
-
+// ----------------------------------------
 // constructor() method is:
 // -----------------------
 // * automatically invoked by new
@@ -91,3 +91,155 @@ let fortune = new Car("Fortune", 10);
 console.log(fortune);
 let lexus = new Car("Lexus", 30);
 console.log(lexus);
+
+// ----------------------------------------
+// -Inheritance in JS
+// ------------------
+// inheritance is passing down properties & methods from parent class to child class.
+
+// class Parent {
+
+// }
+
+// class Child extends Parent {
+
+// }
+
+// * if Child & Parent have same method, child's method will be used.[Method Overriding]
+
+class Parent {
+  hello() {
+    console.log("Hello!");
+  }
+}
+class Child extends Parent {}
+
+let obj = new Child();
+// console.log(obj.hello());
+
+// -
+// -
+// -
+// --------------------
+
+// class Person {
+//   constructor() {
+//     this.species = "Homo sapiens";
+//   }
+//   eat() {
+//     console.log("Eat");
+//   }
+//   sleep() {
+//     console.log("Sleep");
+//   }
+//   work() {
+//     console.log("doing nothing!");
+//   }
+// }
+
+// class Engineer extends Person {
+//   work() {
+//     console.log("Solve problem, build something");
+//   }
+// }
+
+// class Doctor extends Person {
+//   work() {
+//     console.log("treat patients");
+//   }
+// }
+
+// let mohiObj = new Engineer();
+
+// let p1 = new Person()
+// Person {species: 'Homo sapiens'}
+
+// let p2 = new Engineer()
+// Engineer {species: 'Homo sapiens'}
+
+// let p3 = new Doctor()
+// Doctor {species: 'Homo sapiens'}
+
+// -super keywords in JS
+// ---------------------
+// The super keywords is used to call the constructor of its parent class to access the parent's properties and methods.
+
+// super(args) // calls Parent's constructor
+
+// super.parentMethod(args)
+
+// class Person {
+//   constructor() {
+//     console.log("enter parent constructor");
+//     this.species = "Homo sapiens";
+//   }
+//   eat() {
+//     console.log("Eat");
+//   }
+// }
+
+// class Engineer extends Person {
+//   constructor(branch) {
+//     console.log("enter child constructor");
+//     super(); // to invoked parent class constructor
+//     this.branch = branch;
+//     console.log("exit child constructor");
+//   }
+
+//   work() {
+//     console.log("Solve problem, build something");
+//   }
+// }
+
+// let engObj = new Engineer("Computer Eng"); //Uncaught ReferenceError: Must call super constructor in derived class before accessing 'this' or returning from derived constructor at new Engineer
+
+class Person {
+  constructor(name) {
+    this.species = "Homo sapiens";
+    this.name = name;
+  }
+  eat() {
+    console.log("Eat");
+  }
+}
+
+class Engineer extends Person {
+  constructor(name) {
+    super(name); // to invoked parent class constructor
+  }
+
+  work() {
+    super.eat();
+    console.log("Solve problem, build something");
+  }
+}
+
+let engObj = new Engineer("Mohiuddin");
+
+// -Error Handling
+// ---------------
+// try-catch
+
+// try{
+
+//     ...normal code
+
+// }catch (err){
+
+//     ...handling error
+
+// }
+
+let a = 10;
+let b = 20;
+
+console.log(a);
+console.log(b + a);
+try {
+  console.log(b - c); //  error
+} catch (error) {
+  console.log(error);
+}
+console.log(b * a);
+console.log(b / a);
+console.log(b % a);
