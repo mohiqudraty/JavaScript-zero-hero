@@ -1,0 +1,47 @@
+Classes & Object
+================
+
+-ProtoTypes in JS
+-----------------
+A javaScript object is an entity having state and behavior (properties adn method).
+
+JS objects have a special property called prototype.
+
+We can set prototype using __proto__
+
+* if object & prototype have same method.
+objects method will be used.
+
+
+* Object have by default a prototype object
+
+
+
+
+-Classes in JS
+--------------
+Class is a program-code template for creating objects.
+
+those objects will have some state (variables) & some behavior (functions) inside it.
+
+class MyClass {
+    constructor(){...}
+    myMethod(){...}
+}
+
+let myObj = new MyClass();
+
+
+
+constructor() method is:
+-----------------------
+* automatically invoked by new 
+* initializes object
+
+
+
+
+
+Note:
+
+this keywords
