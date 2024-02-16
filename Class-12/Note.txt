@@ -34,6 +34,40 @@ callback Hell: Nested callbacks stacked below one another forming a pyramid stru
 This style of programming becomes difficult to understand & manage.
 
 
+-------------------------------------
+Promises
+--------
+Promise is for "eventual" completion of task. It is an object in JS.
+It is a solution to callback hell.
+
+let promise = new Promise((resolve, reject) => {...}) // function with 2 handlers.
+
+* resolve & reject are callbacks provided by JS.
+ 
+
+A JavaScript Promise object can be: 
+* Pending: the result is undefined
+* Resolved: the result is a value (fulfilled)
+* Reject: the result is an error object
+
+resolve(result)
+reject(error)
+
+*Promise has State(pending, fulfilled) & some result(result for resolve & reject for error): 
+
+
+How to handle Promises?
+-----------------------
+.then() & .catch()
+
+promise.then((res)=>{...})
+
+promise.catch((err)=>{...})
+
+
+Promise Chain
+
+
 
 
 Note: 
@@ -41,3 +75,4 @@ Synchronous
 Asynchronous
 Callback
 Callback Hell 
+Promises

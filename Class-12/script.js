@@ -74,29 +74,29 @@
 //   console.log(i, str);
 // }
 
-function getData(dataId, getNextData) {
-  // 2s
-  setTimeout(() => {
-    console.log("Data = ", dataId);
-    if (getNextData) {
-      getNextData();
-    }
-  }, 2000);
-}
-
-getData(111, () => {
-  console.log("getting data 2....");
-  getData(222, () => {
-    console.log("getting data 3....");
-    getData(333, () => {
-      console.log("getting data 4....");
-      getData(444, () => {
-        console.log("getting data 5....");
-        getData(555);
-      });
-    });
-  });
-});
+// function getData(dataId, getNextData) {
+//   // 2s
+//   setTimeout(() => {
+//     console.log("Data = ", dataId);
+//     if (getNextData) {
+//       getNextData();
+//     }
+//   }, 2000);
+// }
+// nesting--------
+// getData(111, () => {
+//   console.log("getting data 2....");
+//   getData(222, () => {
+//     console.log("getting data 3....");
+//     getData(333, () => {
+//       console.log("getting data 4....");
+//       getData(444, () => {
+//         console.log("getting data 5....");
+//         getData(555);
+//       });
+//     });
+//   });
+// });
 
 // getData(111); //2s
 // getData(222); //2s
@@ -105,3 +105,103 @@ getData(111, () => {
 // data1
 // data2
 // data3
+
+// -------------------------------------
+// Promises
+// --------
+// Promise is for "eventual" completion of task. It is an object in JS.
+// It is a solution to callback hell.
+
+// let promise = new Promise((resolve, reject) => {...}) // function with 2 handlers.
+
+// * resolve & reject are callbacks provided by JS.
+
+// promise State:
+// 1.pending,
+// 2.fulfilled,
+// 3.rejected
+
+// let promise = new Promise((resolve, reject) => {
+//   console.log("I am a promise!");
+//   // resolve("Successful");
+//   reject("Some Error occurred");
+// });
+
+// function getData(dataId) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Data = ", dataId);
+//       resolve("Success");
+//     }, 5000);
+//   });
+// }
+
+// -----------------------------------
+// How to handle Promises?
+// -----------------------
+// .then() & .catch()
+
+// promise.then((res)=>{...})
+
+// promise.catch((err)=>{...})
+
+// const getPromise = () => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("I am a Promise");
+//       resolve("Success");
+//       // reject("something Wrong");
+//     }, 5000);
+//   });
+// };
+
+// let promise = getPromise();
+// promise.then((res) => {
+//   console.log("promise fulfilled", res);
+// });
+
+// promise.catch((err) => {
+//   console.log("error", err);
+// });
+
+// Promise Chain----------------
+function asyncFunc1() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Data 11111111!");
+      resolve("Success");
+    }, 2000);
+  });
+}
+
+function asyncFunc2() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Data 2222222!");
+      resolve("Success");
+    }, 2000);
+  });
+}
+
+// -----------------------
+// console.log("Data Fetching...1");
+// let p1 = asyncFunc1();
+// p1.then((res) => {
+//   console.log(res);
+//   console.log("Data Fetching...2");
+//   let p2 = asyncFunc2();
+//   p2.then((res) => {
+//     console.log(res);
+//   });
+// });
+
+// simple ---------------
+console.log("Data Fetching...1");
+asyncFunc1().then((res) => {
+  console.log(res);
+  console.log("Data Fetching...2");
+  let p2 = asyncFunc2();
+  p2.then((res) => {
+    console.log(res);
+  });
+});
