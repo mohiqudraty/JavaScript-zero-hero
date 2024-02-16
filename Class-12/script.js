@@ -165,23 +165,23 @@
 // });
 
 // Promise Chain----------------
-function asyncFunc1() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("Data 11111111!");
-      resolve("Success");
-    }, 2000);
-  });
-}
+// function asyncFunc1() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Data 11111111!");
+//       resolve("Success");
+//     }, 2000);
+//   });
+// }
 
-function asyncFunc2() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("Data 2222222!");
-      resolve("Success");
-    }, 2000);
-  });
-}
+// function asyncFunc2() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Data 2222222!");
+//       resolve("Success");
+//     }, 2000);
+//   });
+// }
 
 // -----------------------
 // console.log("Data Fetching...1");
@@ -196,12 +196,123 @@ function asyncFunc2() {
 // });
 
 // simple ---------------
-console.log("Data Fetching...1");
-asyncFunc1().then((res) => {
-  console.log(res);
-  console.log("Data Fetching...2");
-  let p2 = asyncFunc2();
-  p2.then((res) => {
-    console.log(res);
-  });
-});
+// console.log("Data Fetching...1");
+// asyncFunc1().then((res) => {
+//   console.log(res);
+//   console.log("Data Fetching...2");
+//   let p2 = asyncFunc2();
+//   p2.then((res) => {
+//     console.log(res);
+//   });
+// });
+
+// function getData(dataId) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Data = ", dataId);
+//       resolve("Success");
+//     }, 3000);
+//   });
+// }
+
+// Promise Chain--
+// getData(111).then((res) => {
+//   console.log(res);
+//   getData(222).then((res) => {
+//     console.log(res);
+//   });
+// });
+
+// Promise Chaining --
+// getData(111)
+//   .then((res) => {
+//     return getData(222);
+//   })
+//   .then((res) => {
+//     return getData(333);
+//   })
+//   .then((res) => {
+//     console.log(res);
+//   });
+
+// -Async-await
+// ============
+// async function always returns a promise.
+
+// async function myFunc() {.....}
+
+// await pauses the execution of its surrounding async function until the promise is settled.
+
+// async function hello() {
+//   console.log("Hello!");
+// }
+
+// function api() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Weather Data!");
+//       resolve(200);
+//     }, 2000);
+//   });
+// }
+
+// async function getWeatherData() {
+//   await api(); //1st
+//   await api(); //2nd
+// }
+
+// function getData(dataId) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Data = ", dataId);
+//       resolve("Success");
+//     }, 2000);
+//   });
+// }
+
+// -Async-await--
+// ------------------
+// async function getAllData() {
+//   console.log("getting data 1.....");
+//   await getData(1);
+//   console.log("getting data 2.....");
+//   await getData(2);
+//   console.log("getting data 3.....");
+//   await getData(3);
+//   console.log("getting data 4.....");
+//   await getData(4);
+//   console.log("getting data 5.....");
+//   getData(5);
+// }
+
+// callBack Hell Vs Promise Chain Vs Async-Await
+
+// IIFE: Immediately Invoked Function Expression
+// =============================================
+// IIFE is a function that is called immediately as soon as it is defined.
+
+// (async function () {
+//   console.log("getting data 1.....");
+//   await getData(1);
+//   console.log("getting data 2.....");
+//   await getData(2);
+//   console.log("getting data 3.....");
+//   await getData(3);
+//   console.log("getting data 4.....");
+//   await getData(4);
+//   console.log("getting data 5.....");
+//   getData(5);
+// })();
+
+// IIFE ------------
+// (function () {
+//   console.log(".....");
+// })();
+
+// (() => {
+//   console.log(".....");
+// })();
+
+// (async function () {
+//   console.log(".....");
+// })();

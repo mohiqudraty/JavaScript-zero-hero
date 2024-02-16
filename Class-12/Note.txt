@@ -65,9 +65,44 @@ promise.then((res)=>{...})
 promise.catch((err)=>{...})
 
 
-Promise Chain
+Promise Chain-----------------
+getData(111)
+  .then((res) => {
+    return getData(222);
+  })
+  .then((res) => {
+    return getData(333);
+  })
+  .then((res) => {
+    console.log(res);
+  });
 
 
+-Async-await
+============
+async function always returns a promise.
+
+async function myFunc() {.....}
+
+
+await pauses the execution of its surrounding async function until the promise is settled.
+
+
+IIFE: Immediately Invoked Function Expression
+=============================================
+IIFE is a function that is called immediately as soon as it is defined.
+
+(function(){
+  console.log(".....");
+})();
+
+(() => {
+  console.log(".....");
+})();
+
+(async function(){
+  console.log(".....");
+})();
 
 
 Note: 
@@ -76,3 +111,4 @@ Asynchronous
 Callback
 Callback Hell 
 Promises
+callBack Hell Vs Promise Chain Vs Async-Await
